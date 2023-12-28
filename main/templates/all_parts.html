@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  YLCPS-Parts for Sale!
+{% endblock %}
+
+
+{% block content %}
+  <h1>Products:</h1>
+  
+  <ul class="list-group">
+    {% for x in myparts %}
+      <li class="list-group-item"><a href="details/{{ x.id }}">{{ x.name }} </a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

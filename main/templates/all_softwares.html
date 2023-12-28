@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  YLCPS-Softwares for Sale!
+{% endblock %}
+
+
+{% block content %}
+  <h1>Softwares:</h1>
+  
+  <ul class="list-group">
+    {% for x in mysoftwares %}
+      <li class="list-group-item"><a href="details/{{ x.id }}">{{ x.name }} </a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

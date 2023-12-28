@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  YLCPS-Prebuild PCs for Sale!
+{% endblock %}
+
+
+{% block content %}
+  <h1>Prebuild PCs:</h1>
+  
+  <ul class="list-group">
+    {% for x in myprebuilds %}
+      <li class="list-group-item"><a href="details/{{ x.id }}">{{ x.name }}-{{ x.type }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

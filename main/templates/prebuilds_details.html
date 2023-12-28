@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ myprebuilds.name }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>Product Name: <Strong>{{ myprebuilds.name }}</Strong></h1>
+  <h2>Product Type: {{ myprebuilds.type }}</h2>
+  <h3>Price: ₱{{ myprebuilds.price }}</h3>
+  <hr>
+  <h4>Details: {{ myprebuilds.details }}</h4>
+  <h4>Quantity: {{ myprebuilds.quantity }}</h4>
+  <hr>
+  <p>Back to <a href="/parts/">All Prebuild PCs</a></p>
+  
+{% endblock %}

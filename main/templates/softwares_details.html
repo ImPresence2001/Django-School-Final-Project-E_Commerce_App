@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mysoftwares.name }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>Product Name: <Strong>{{ mysoftwares.name }}</Strong></h1>
+  <h2>Product Type: {{ mysoftwares.type }}</h2>
+  <h3>Price: ₱{{ mysoftwares.price }}</h3>
+  <hr>
+  <h4>Details: {{ mysoftwares.details }}</h4>
+  <h4>Quantity: {{ mysoftwares.quantity }}</h4>
+  <hr>
+  <p>Back to <a href="/parts/">All Softwares</a></p>
+  
+{% endblock %}
